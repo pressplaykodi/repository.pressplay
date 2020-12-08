@@ -1,3 +1,63 @@
+Version 1.2.37
+Added: PeekVids
+Added: Hentaidude
+Added: CartoonPornVideos
+Updated: PornDoe
+PornHD download fix
+Cams streams download option added,
+You need to d/l ffmpeg binary to use 
+this feature, and then go into settings 
+and adjust download path and path to
+ffmpeg.If you set "Download stream" to 
+true, d/l will start automatically when
+playing the stream, if set to false
+download can be started from contextual
+menu "Download video".file name is the
+name of the model+datetime, container
+is mkv. 
+
+Version 1.2.36
+PornTrex/JavBangers favorites fix
+Beeg improvements
+Fixed download PornHD
+Fixed: ParadiseHill
+
+Version 1.2.35
+Added: NetFlixPorno
+New option for Enable/Disable site/category.
+Disable from contextual menu, 
+Reenable from Add-on settings
+
+Version 1.2.34
+Updated: redTube
+Added: Pandamovies
+Updated: JAVhoho
+
+Version 1.2.33
+Added PornHD
+Updated: RedTube
+Fixed: Eporner
+Fixed: Naked
+
+Version 1.2.32
+Added: FreeVideo.cz
+
+Version 1.2.31
+Improved: JAVhoho
+Fixed: MangoPorn
+Added: redTube
+Added: RedTube Live
+Added: desixnxx
+Added: BitPorno
+Removed: Eroticage
+
+Version 1.2.30
+Fixed: Camsoda
+Fixed: JAVhoho
+Improved: Beeg
+Improved: Eporner
+Improved: Justporn
+
 Version 1.2.29
 Fixed: Eporner
 Fixed: IPornoVideos

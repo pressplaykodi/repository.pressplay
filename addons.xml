@@ -29,7 +29,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.pressplay" name="[COLOR pink]PressPlay[/COLOR]" provider-name="PressPlay" version="1.0.2">
+<addon id="plugin.video.pressplay" name="[COLOR pink]PressPlay[/COLOR]" provider-name="PressPlay" version="1.0.4">
     <requires>
         <!--<import addon="xbmc.python" version="2.20.0" />-->
         <import addon="script.pressplay.artwork" />
@@ -124,7 +124,7 @@ Changelog 0.0.1:
 
 <addon id="plugin.video.uwc"
        name="Ultimate Whitecream"
-       version="1.2.29"
+       version="1.2.37"
        provider-name="Whitecream, holisticdioxide">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
@@ -148,15 +148,28 @@ Changelog 0.0.1:
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-        <news>[B]Version 1.2.29[/B]
-Fixed: Eporner
-Fixed: IPornoVideos
-Fixed: Spankbang
+        <news>[B]Version 1.2.37[/B]
+Added: PeekVids
+Added: Hentaidude
+Added: CartoonPornVideos
+Updated: PornDoe
+PornHD download fix
+Cams streams download option added,
+You need to d/l ffmpeg binary to use
+this feature, and then go into settings
+and adjust download path and path to
+ffmpeg.If you set "Download stream" to
+true, d/l will start automatically when
+playing the stream, if set to false
+download can be started from contextual
+menu "Download video".file name is the
+name of the model+datetime, container
+is mkv.
 </news>
     </extension>
 </addon>
 
-<addon id="plugin.video.kaito" name="kaito" provider-name="SwagOtaku" version="0.0.5">
+<addon id="plugin.video.kaito" name="kaito" provider-name="SwagOtaku" version="0.0.6">
   <requires>
     <import addon="xbmc.python" version="2.25.0" />
     <import addon="script.module.requests" version="2.19.1" />
@@ -179,6 +192,15 @@ Fixed: Spankbang
 			<fanart>fanart.jpg</fanart>
 		</assets>
     <news>
+Changelog 0.0.6:
+Added Premiumize and Real-Debrid cloud inspection
+Added setting 'Seperate Dubs and Subs' to seperate anime into sub and dub list items if dub is available (test flight)
+Added instruction dialog for MAL/AniList auth for linux os
+Adjusted set titles to romaji/english
+Adjusted Tertiary Dub filter
+Improved 'Next Up'
+Improved season torrent pack scraping
+
 Changelog 0.0.5:
 Fixed bug
 
@@ -250,7 +272,7 @@ Initial release
 
 <addon
   id="plugin.video.videodevil"
-  version="1.8.4"
+  version="1.8.7"
   name="VideoDevil"
   provider-name="xbmc-adult">
   <requires>
@@ -375,14 +397,15 @@ Initial release
   </extension>
 </addon>
 
-<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.12" provider-name="gujal">
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.17" provider-name="gujal">
     <requires>
         <!-- <import addon="xbmc.python" version="3.0.0" /> -->
-        <import addon="script.module.six" version="0.0.1"/>
+        <import addon="script.module.six" />
+        <import addon="script.module.kodi-six" />
         <import addon="plugin.video.youtube" optional="true" />
         <import addon="script.module.python.twitch" optional="true" />
         <import addon="script.module.cryptopy" version="1.2.6" optional="true" />
-        <import addon="plugin.video.gdrive" optional="true" />
+        <import addon="plugin.googledrive" optional="true" />
     </requires>
     <extension point="xbmc.python.module" library="lib" />
     <extension point="xbmc.python.pluginsource" library="lib/default.py" />
@@ -639,7 +662,7 @@ Supports: OpenSubtitles, BSPlayer, Podnadpisi.NET, SubDB, Subscene, Addic7ed
     </extension>
 </addon>
 
-<addon id="script.module.playscrapers" name="PlayScrapers Module" version="1.0.1" provider-name="PressPlay">
+<addon id="script.module.playscrapers" name="PlayScrapers Module" version="1.0.4" provider-name="PressPlay">
     <requires>
         <!--<import addon="xbmc.python" version="2.20.0" />-->
         <import addon="script.module.beautifulsoup4" />
@@ -666,14 +689,15 @@ Supports: OpenSubtitles, BSPlayer, Podnadpisi.NET, SubDB, Subscene, Addic7ed
     </extension>
 </addon>
 
-<addon id="script.module.urlresolver" name="URLResolver" version="5.1.12" provider-name="tvaddons">
+<addon id="script.module.urlresolver" name="URLResolver" version="5.1.15" provider-name="tvaddons">
     <requires>
         <!-- <import addon="xbmc.python" version="3.0.0" /> -->
-        <import addon="script.module.six" version="0.0.1"/>
+        <import addon="script.module.six" />
+        <import addon="script.module.kodi-six" />
         <import addon="plugin.video.youtube" optional="true" />
         <import addon="script.module.python.twitch" optional="true" />
         <import addon="script.module.cryptopy" version="1.2.6" optional="true" />
-        <import addon="plugin.video.gdrive" optional="true" />
+        <import addon="plugin.googledrive" optional="true" />
     </requires>
     <extension point="xbmc.python.module" library="lib" />
     <extension point="xbmc.python.pluginsource" library="lib/default.py" />
