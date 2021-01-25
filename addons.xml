@@ -29,7 +29,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.pressplay" name="[COLOR pink]PressPlay[/COLOR]" provider-name="PressPlay" version="1.0.4">
+<addon id="plugin.video.pressplay" name="[COLOR pink]PressPlay[/COLOR]" provider-name="PressPlay" version="1.0.6">
     <requires>
         <!--<import addon="xbmc.python" version="2.20.0" />-->
         <import addon="script.pressplay.artwork" />
@@ -40,6 +40,7 @@
         <import addon="script.module.beautifulsoup4" />
         <import addon="script.module.playscrapers" />
         <import addon="script.module.six" />
+        <import addon="script.module.kodi-six" />
         <import addon="script.module.simplejson" />
         <import addon="script.module.metahandler" optional="true" />
         <import addon="script.module.exoscrapers" optional="true" />
@@ -124,7 +125,7 @@ Changelog 0.0.1:
 
 <addon id="plugin.video.uwc"
        name="Ultimate Whitecream"
-       version="1.2.37"
+       version="1.2.43"
        provider-name="Whitecream, holisticdioxide">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
@@ -148,28 +149,13 @@ Changelog 0.0.1:
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-        <news>[B]Version 1.2.37[/B]
-Added: PeekVids
-Added: Hentaidude
-Added: CartoonPornVideos
-Updated: PornDoe
-PornHD download fix
-Cams streams download option added,
-You need to d/l ffmpeg binary to use
-this feature, and then go into settings
-and adjust download path and path to
-ffmpeg.If you set "Download stream" to
-true, d/l will start automatically when
-playing the stream, if set to false
-download can be started from contextual
-menu "Download video".file name is the
-name of the model+datetime, container
-is mkv.
+        <news>[B]Version 1.2.43[/B]
+Removed Cumination dependency
 </news>
     </extension>
 </addon>
 
-<addon id="plugin.video.kaito" name="kaito" provider-name="SwagOtaku" version="0.0.6">
+<addon id="plugin.video.kaito" name="kaito" provider-name="SwagOtaku" version="0.0.7">
   <requires>
     <import addon="xbmc.python" version="2.25.0" />
     <import addon="script.module.requests" version="2.19.1" />
@@ -192,6 +178,13 @@ is mkv.
 			<fanart>fanart.jpg</fanart>
 		</assets>
     <news>
+Changelog 0.0.7:
+Improved cloud inspection
+Adjusted 'Next Up'
+Adjusted 'Rebuild Database'
+Fixed gogo embed
+Fixed new episodes not being added
+
 Changelog 0.0.6:
 Added Premiumize and Real-Debrid cloud inspection
 Added setting 'Seperate Dubs and Subs' to seperate anime into sub and dub list items if dub is available (test flight)
@@ -272,7 +265,7 @@ Initial release
 
 <addon
   id="plugin.video.videodevil"
-  version="1.8.7"
+  version="1.8.9"
   name="VideoDevil"
   provider-name="xbmc-adult">
   <requires>
@@ -397,7 +390,7 @@ Initial release
   </extension>
 </addon>
 
-<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.17" provider-name="gujal">
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.22" provider-name="gujal">
     <requires>
         <!-- <import addon="xbmc.python" version="3.0.0" /> -->
         <import addon="script.module.six" />
@@ -429,11 +422,11 @@ Initial release
 
 <addon id="service.subtitles.a4ksubtitles"
        name="a4kSubtitles"
-       version="1.7.2"
+       version="2.2.0"
        provider-name="Unknown">
     <requires>
-      <import addon="vfs.libarchive"/>
       <import addon="script.module.requests"/>
+      <import addon="vfs.libarchive" optional="true"/>
     </requires>
     <extension point="xbmc.subtitle.module" library="main.py"/>
     <extension point="xbmc.service" library="main_service.py" />
@@ -441,7 +434,7 @@ Initial release
         <summary lang="en">a4kSubtitles - Multi-Source Subtitles Addon</summary>
         <description>
 Multi-source subtitles addon optimized for Seren.
-Supports: OpenSubtitles, BSPlayer, Podnadpisi.NET, SubDB, Subscene, Addic7ed
+Supports: OpenSubtitles, BSPlayer, Podnadpisi.NET, Subscene, Addic7ed
         </description>
         <platform>all</platform>
         <reuselanguageinvoker>true</reuselanguageinvoker>
@@ -455,6 +448,20 @@ Supports: OpenSubtitles, BSPlayer, Podnadpisi.NET, SubDB, Subscene, Addic7ed
             <screenshot>screenshot-03.png</screenshot>
         </assets>
         <news>
+[v2.2.0]:
+  * Fix KODI 19 Matrix support
+
+[v2.1.0]:
+  * Fix Persian search in Subscene
+
+[v2.0.0]:
+  * Use IMDb as main source for all meta.
+  * Retry on 503 (Service Unavailable). OpenSubtitles and Subscene seems to return it occasionally.
+
+[v1.8.0]:
+  * Remove SubDb (Site is down)
+  * Make lib vfs optional since there are fallbacks and it is used as last case scenario. Thus making the addon installable on platforms which are not supported by lib vfs.
+
 [v1.7.2]:
   * Improve results sort based on title match
 
@@ -662,12 +669,13 @@ Supports: OpenSubtitles, BSPlayer, Podnadpisi.NET, SubDB, Subscene, Addic7ed
     </extension>
 </addon>
 
-<addon id="script.module.playscrapers" name="PlayScrapers Module" version="1.0.4" provider-name="PressPlay">
+<addon id="script.module.playscrapers" name="PlayScrapers Module" version="1.0.9" provider-name="PressPlay">
     <requires>
         <!--<import addon="xbmc.python" version="2.20.0" />-->
         <import addon="script.module.beautifulsoup4" />
         <import addon="script.module.requests" />
         <import addon="script.module.six" />
+        <import addon="script.module.kodi-six" />
         <import addon="script.module.simplejson" />
     </requires>
     <extension point="xbmc.python.module" library="lib" />
@@ -689,7 +697,7 @@ Supports: OpenSubtitles, BSPlayer, Podnadpisi.NET, SubDB, Subscene, Addic7ed
     </extension>
 </addon>
 
-<addon id="script.module.urlresolver" name="URLResolver" version="5.1.15" provider-name="tvaddons">
+<addon id="script.module.urlresolver" name="URLResolver" version="5.1.22" provider-name="tvaddons">
     <requires>
         <!-- <import addon="xbmc.python" version="3.0.0" /> -->
         <import addon="script.module.six" />

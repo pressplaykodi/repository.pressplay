@@ -1,3 +1,13 @@
+[B]Version 1.8.9[/B]
+
+- Updated: girlfriendvideos
+- Updated: xhamster
+- Fix title.append
+
+[B]Version 1.8.8[/B]
+
+- Updated: pornhub
+
 [B]Version 1.8.7[/B]
 
 - Fixes for Kodi 19
