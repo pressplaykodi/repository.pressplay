@@ -1,15 +1,14 @@
-Version 5.1.22 (January 18, 2021)
+Version 5.1.24 (February 9, 2021)
 - Code Base Changes:
     - None
 
 - Resolvers Added:
-    - jetload
+    - megaup.net
  
 - Resolvers Fixed/Updated:
-    - videossh
-    - voe.sx
-    - evoload
-    - doodstream
+    - gofile
+    - tvlogy
+
 
 - Resolvers Removed
     - None

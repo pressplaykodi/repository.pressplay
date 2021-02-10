@@ -29,7 +29,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.pressplay" name="[COLOR pink]PressPlay[/COLOR]" provider-name="PressPlay" version="1.0.6">
+<addon id="plugin.video.pressplay" name="[COLOR pink]ExodusVPN.com[/COLOR]" provider-name="PressPlay" version="1.0.7">
     <requires>
         <!--<import addon="xbmc.python" version="2.20.0" />-->
         <import addon="script.pressplay.artwork" />
@@ -42,7 +42,6 @@
         <import addon="script.module.six" />
         <import addon="script.module.kodi-six" />
         <import addon="script.module.simplejson" />
-        <import addon="script.module.metahandler" optional="true" />
         <import addon="script.module.exoscrapers" optional="true" />
         <import addon="script.module.orion" optional="true" />
         <import addon="plugin.video.youtube" optional="true" />
@@ -71,7 +70,7 @@
     </extension>
 </addon>
 
-<addon id="context.kaito" version="0.0.2" name="kaito - Global Context Menu Items" provider-name="SwagOtaku">
+<addon id="context.kaito" version="0.0.3" name="kaito - Global Context Menu Items" provider-name="SwagOtaku">
 	<requires>
 		<import addon="xbmc.python" version="2.23.0" />
 	</requires>
@@ -114,6 +113,9 @@
 			<fanart>fanart.jpg</fanart>
 		</assets>
 		<news>
+Changelog 0.0.3:
+- Fixed Rescrape running twice
+
 Changelog 0.0.2:
 - Added Rescrape Item option
 
@@ -125,7 +127,7 @@ Changelog 0.0.1:
 
 <addon id="plugin.video.uwc"
        name="Ultimate Whitecream"
-       version="1.2.43"
+       version="1.2.44"
        provider-name="Whitecream, holisticdioxide">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
@@ -149,13 +151,13 @@ Changelog 0.0.1:
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-        <news>[B]Version 1.2.43[/B]
-Removed Cumination dependency
+        <news>[B]Version 1.2.44[/B]
+Fixed thumbnails for xxxstreams.org
 </news>
     </extension>
 </addon>
 
-<addon id="plugin.video.kaito" name="kaito" provider-name="SwagOtaku" version="0.0.7">
+<addon id="plugin.video.kaito" name="kaito" provider-name="SwagOtaku" version="0.0.8">
   <requires>
     <import addon="xbmc.python" version="2.25.0" />
     <import addon="script.module.requests" version="2.19.1" />
@@ -178,6 +180,11 @@ Removed Cumination dependency
 			<fanart>fanart.jpg</fanart>
 		</assets>
     <news>
+Changelog 0.0.8:
+Fixed movies not working in AniList watchlist
+Fixed scrape and rescrape running twice
+Updated anime season for upcoming and trending menu items
+
 Changelog 0.0.7:
 Improved cloud inspection
 Adjusted 'Next Up'
@@ -222,9 +229,9 @@ Initial release
   </extension>
 </addon>
 
-<addon id="script.module.orion" version="4.3.1" name="Orion" provider-name="Orion">
+<addon id="script.module.orion" version="4.4.3" name="Orion" provider-name="Orion">
 	<requires>
-		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="xbmc.addon" version="17.0.000" />
 		<import addon="repository.orion" version="1.0.0" optional="true" />
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="lib/addon.py">
@@ -265,7 +272,7 @@ Initial release
 
 <addon
   id="plugin.video.videodevil"
-  version="1.8.9"
+  version="1.8.11"
   name="VideoDevil"
   provider-name="xbmc-adult">
   <requires>
@@ -390,7 +397,7 @@ Initial release
   </extension>
 </addon>
 
-<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.22" provider-name="gujal">
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.24" provider-name="gujal">
     <requires>
         <!-- <import addon="xbmc.python" version="3.0.0" /> -->
         <import addon="script.module.six" />
@@ -422,7 +429,7 @@ Initial release
 
 <addon id="service.subtitles.a4ksubtitles"
        name="a4kSubtitles"
-       version="2.2.0"
+       version="2.3.0"
        provider-name="Unknown">
     <requires>
       <import addon="script.module.requests"/>
@@ -448,6 +455,9 @@ Supports: OpenSubtitles, BSPlayer, Podnadpisi.NET, Subscene, Addic7ed
             <screenshot>screenshot-03.png</screenshot>
         </assets>
         <news>
+[v2.3.0]:
+  * Add concurrency error handling
+
 [v2.2.0]:
   * Fix KODI 19 Matrix support
 
@@ -669,7 +679,7 @@ Supports: OpenSubtitles, BSPlayer, Podnadpisi.NET, Subscene, Addic7ed
     </extension>
 </addon>
 
-<addon id="script.module.playscrapers" name="PlayScrapers Module" version="1.0.9" provider-name="PressPlay">
+<addon id="script.module.playscrapers" name="PlayScrapers Module" version="1.1.0" provider-name="PressPlay">
     <requires>
         <!--<import addon="xbmc.python" version="2.20.0" />-->
         <import addon="script.module.beautifulsoup4" />
