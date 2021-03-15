@@ -1,3 +1,23 @@
+[B][COLOR gold]v2.0.0[/COLOR][/B]
+- Switched to TMDb API for TV Shows metadata
+    [I]Note:[/I]  This is a big change - large parts of the code have been re-written
+    and many other parts (some obvious some not) have been touched.
+    Thanks to all the testers involved with this release.
+- Fixed issue with size filtering
+- Description update
+- Stop attempting to scrobble when playback fails to start
+- Minor source fetching function tweaks
+- Minor fixes
+- Attempt to fix error when upgrade Kodi 18 to 19 has occured and
+    openscrapers package was already installed
+    NOTE: Playscrapers is not Kodi 19 compatible so can't be used.
+    If you have it, uninstall from Add-ons/My add-ons/Program add-ons.
+- Applied extra artwork to the player
+- Fixed resume from local resume points (again)
+- Fix local resume points prompting to resume from <120 secs offset
+- Library database fixes
+- Attempt to speedup directory source list appearance a bit
+
 [B][COLOR gold]v1.0.7[/COLOR][/B]
 - Fix playback not starting on local resume point
 - Removed MetaHandler dependency. Local indicators are now handled internaly.

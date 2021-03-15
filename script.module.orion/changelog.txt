@@ -1,4 +1,11 @@
 
+[B]4.5.0 (2021.02.10)[/B]
+- Improved authentication process.
+- Improved Seren integration.
+- Added public interface for request usage.
+- Changed online settings backup requirements.
+- Settings cleanup and optimization.
+
 [B]4.4.3 (2021.02.04)[/B]
 - Optimized saving filters settings.
 - Updated core class.

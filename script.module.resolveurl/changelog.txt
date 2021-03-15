@@ -1,14 +1,12 @@
-Version 5.1.24 (February 9, 2021)
+Version 5.1.27 (March 14, 2021)
 - Code Base Changes:
     - None
 
 - Resolvers Added:
-    - megaup.net
+    - vidmojo
  
 - Resolvers Fixed/Updated:
-    - gofile
-    - tvlogy
-
+    - None
 
 - Resolvers Removed
     - None
