@@ -1,4 +1,12 @@
 
+[B]4.5.2 (2021.04.02)[/B]
+- Updated all integrations for Kodi 19.
+- Fixed Elementum integration.
+
+[B]4.5.1 (2021.03.15)[/B]
+- Updated FenomScrapers integration.
+- Some dialog improvements.
+
 [B]4.5.0 (2021.02.10)[/B]
 - Improved authentication process.
 - Improved Seren integration.

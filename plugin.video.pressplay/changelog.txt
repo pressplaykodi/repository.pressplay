@@ -1,41 +1,6 @@
-[B][COLOR gold]v2.0.0[/COLOR][/B]
-- Switched to TMDb API for TV Shows metadata
-    [I]Note:[/I]  This is a big change - large parts of the code have been re-written
-    and many other parts (some obvious some not) have been touched.
-    Thanks to all the testers involved with this release.
-- Fixed issue with size filtering
-- Description update
-- Stop attempting to scrobble when playback fails to start
-- Minor source fetching function tweaks
-- Minor fixes
-- Attempt to fix error when upgrade Kodi 18 to 19 has occured and
-    openscrapers package was already installed
-    NOTE: Playscrapers is not Kodi 19 compatible so can't be used.
-    If you have it, uninstall from Add-ons/My add-ons/Program add-ons.
-- Applied extra artwork to the player
-- Fixed resume from local resume points (again)
-- Fix local resume points prompting to resume from <120 secs offset
-- Library database fixes
-- Attempt to speedup directory source list appearance a bit
+[B][COLOR gold]v3.0.0[/COLOR][/B]
+- Menu fixes
 
-[B][COLOR gold]v1.0.7[/COLOR][/B]
-- Fix playback not starting on local resume point
-- Removed MetaHandler dependency. Local indicators are now handled internaly.
-    [I]NOTE:[/I] Unfortunately, due to this, all [I]local[/I] watched statuses and resume
-    points will reset. This was necessary for several reasons:
-    Metahandler was doing unnecessary API calls, fetching information we already had -
-    it was actually not needed, a leftover from Genesis days.
-    There are various versions of it floating around, some (kinda) working, some don't.
-    It's also not compatible with Kodi 19, and will stop working once tvdb v1 API phases out.
-- Fixed some issues with metadata cacheing
-- Updated cloudflare scraper from source
-- Resume/scrobble fixes for Kodi 19
-- Added check for youtube add-on upon attempt to play trailer, and prompt to install it
-    if it isn't already
-- Reworked resume points/trakt scrobbles, as a preparation for removing MetaHandler dependency
-    This means loss of local resume points. New resume points will properly propagate though
-    Also Trakt scrobbles now properly stop upon finishing playback
-    
 [B][COLOR gold]v1.0.6[/COLOR][/B]
 - Search queries tweaks
 - Cosmetic and other minor fixes

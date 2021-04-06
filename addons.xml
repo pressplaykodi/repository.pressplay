@@ -29,19 +29,21 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.pressplay" name="[COLOR pink]ExodusVPN.com[/COLOR]" provider-name="PressPlay" version="2.0.0">
+<addon id="plugin.video.pressplay" name="[COLOR pink]ExodusVPN.com[/COLOR]" provider-name="PressPlay" version="3.0.0">
     <requires>
         <!--<import addon="xbmc.python" version="2.20.0" />-->
         <import addon="script.pressplay.artwork" />
         <import addon="script.pressplay.metadata" />
+        <import addon="repository.pressplay" />
         <import addon="script.module.urlresolver" />
         <import addon="script.module.requests" />
         <import addon="script.module.beautifulsoup4" />
         <import addon="script.module.playscrapers" />
-        <import addon="repository.pressplay" />
         <import addon="script.module.six" />
         <import addon="script.module.kodi-six" />
         <import addon="script.module.simplejson" />
+        <import addon="script.module.metahandler" optional="true" />
+        <import addon="script.module.exoscrapers" optional="true" />
         <import addon="script.module.orion" optional="true" />
         <import addon="plugin.video.youtube" optional="true" />
     </requires>
@@ -156,6 +158,26 @@ Added keyword alphabetical sorting
     </extension>
 </addon>
 
+<addon id="plugin.program.indigo" version="4.0.20" name="Indigo" provider-name="tvaddons">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+	</requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video executable</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="startup"/>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Indigo is your gateway to the world of unofficial Kodi addons!</summary>
+        <description lang="en">Indigo is your gateway to the world of unofficial Kodi addons! Please visit www.tvaddons.co for support.</description>
+        <disclaimer lang="en">Kodi is a registered trademark of the XBMC Foundation. We are not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation. Furthermore, any software, addons, or products offered by us will receive no support in official Kodi channels, including the Kodi forums and various social networks.</disclaimer>
+        <language>en</language>
+        <platform>all</platform>
+        <forum>https://www.tvaddons.co/forums</forum>
+        <website>https://www.tvaddons.co</website>
+        <source>https://github.com/tvaddonsco/plugin.program.indigo</source>
+    </extension>
+</addon>
+
 <addon id="plugin.video.kaito" name="kaito" provider-name="SwagOtaku" version="0.0.8">
   <requires>
     <import addon="xbmc.python" version="2.25.0" />
@@ -228,7 +250,7 @@ Initial release
   </extension>
 </addon>
 
-<addon id="script.module.orion" version="4.5.0" name="Orion" provider-name="Orion">
+<addon id="script.module.orion" version="4.5.2" name="Orion" provider-name="Orion">
 	<requires>
 		<import addon="xbmc.addon" version="17.0.000" />
 		<import addon="repository.orion" version="1.0.0" optional="true" />
@@ -371,12 +393,12 @@ Initial release
     </extension>
 </addon>
 
-<addon id="script.module.metahandler" name="metahandler" version="5.0.1" provider-name="Eldorado">
+<addon id="script.module.metahandler" name="metahandler" version="3.99.03" provider-name="Eldorado">
 	<requires>
-		<import addon="xbmc.python" version="3.0.0" />
-		<import addon="script.module.six" version="1.14.0+matrix.2" />
-		<import addon="script.module.simplejson" version="3.17.0+matrix.2" />
-		<import addon="script.module.myconnpy" version="8.0.18+matrix.1" />
+		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="script.module.simplejson" version="3.3.0" />
+		<import addon="script.module.addon.common" version="2.0.0" />
+		<import addon="script.module.myconnpy" version="1.1.6" />
 	</requires>
 	<extension point="xbmc.python.module" library="lib" />
 	<extension point="xbmc.python.pluginsource" library="lib/default.py" />
@@ -396,14 +418,11 @@ Initial release
 			<fanart></fanart>
 			<screenshot></screenshot>
 		</assets>
-		<news>
-[B]Version 5.0.1[/B]
-- Fixed settings.xml version preventing setting UI from showing in Kodiunder Matrix
-		</news>
+		<news></news>
 	</extension>
 </addon>
 
-<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.27" provider-name="gujal">
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.28" provider-name="gujal">
     <requires>
         <!-- <import addon="xbmc.python" version="3.0.0" /> -->
         <import addon="script.module.six" />
@@ -432,7 +451,7 @@ Initial release
     </extension>
 </addon>
 
-<addon id="plugin.video.cumination" name="Cumination" provider-name="Cumination" version="1.1.9">
+<addon id="plugin.video.cumination" name="Cumination" provider-name="Cumination" version="1.1.11">
     <requires>
         <import addon="script.module.six" />
         <import addon="script.module.kodi-six" />
@@ -694,6 +713,47 @@ Supports: OpenSubtitles, BSPlayer, Podnadpisi.NET, Subscene, Addic7ed
     </extension>
 </addon>
 
+<addon id="plugin.video.exodus" name="[COLOR orange]ExodusVPN.com[/COLOR]" provider-name="ExodusVPN.com" version="11.0.0">
+    <requires>
+        <!--<import addon="xbmc.python" version="2.20.0" />-->
+        <import addon="script.exodus.artwork" />
+        <import addon="script.exodus.metadata" />
+        <import addon="repository.kodibae" />
+        <import addon="script.module.urlresolver" />
+        <import addon="script.module.requests" />
+        <import addon="script.module.beautifulsoup4" />
+        <import addon="script.module.playscrapers" />
+        <import addon="script.module.six" />
+        <import addon="script.module.simplejson" />
+        <import addon="script.module.metahandler" optional="true" />
+        <import addon="script.module.exoscrapers" optional="true" />
+        <import addon="script.module.orion" optional="true" />
+        <import addon="plugin.video.youtube" optional="true" />
+    </requires>
+    <extension library="exodus.py" point="xbmc.python.pluginsource">
+        <provides>video</provides>
+    </extension>
+    <extension library="service.py" point="xbmc.service" start="startup" />
+    <extension point="xbmc.addon.metadata">
+        <reuselanguageinvoker>false</reuselanguageinvoker>
+        <summary lang="en_GB">Exodus</summary>
+        <description lang="en_GB">Get Better Streaming and Support Exodus with a VPN from [COLOR pink]ExodusVPN.com[/COLOR]</description>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+        <forum />
+        <website>https://www.exodusvpn.com</website>
+        <source />
+        <disclaimer lang="en_GB">The author of this add-on does not host any of the content which is found and has no affiliation with any of the content providers. This add-on simply searches websites for content. Use at your own risk!</disclaimer>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+        <news>
+- See Changelog on Tools menu
+        </news>
+    </extension>
+</addon>
+
 <addon id="script.pressplay.artwork" version="1.0.0" name="PressPlay Artwork" provider-name="PressPlay">
 	<requires>
 		<!--<import addon="xbmc.python" version="2.19.0"/>-->
@@ -723,7 +783,33 @@ Supports: OpenSubtitles, BSPlayer, Podnadpisi.NET, Subscene, Addic7ed
     </extension>
 </addon>
 
-<addon id="script.module.playscrapers" name="PlayScrapers Module" version="2.0.0" provider-name="PressPlay">
+<addon id="repository.xbmchub" name="TVADDONS.CO Add-on Repository" version="3.0.0" provider-name="tvaddons">
+	<extension point="xbmc.addon.repository" name="TVADDONS.CO Add-on Repository">
+	<dir>
+		<info compressed="false">https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/addons.xml</info>
+		<checksum>https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/zips/</datadir>
+	</dir>
+
+    <dir>
+		<info compressed="false">https://github.com/tvaddonsco/tva-release-repo/raw/master/addons.xml</info>
+		<checksum>https://github.com/tvaddonsco/tva-release-repo/raw/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://github.com/tvaddonsco/tva-release-repo/raw/master/</datadir>
+    </dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Unofficial Kodi Addons from TVADDONS.CO</summary>
+		<description>Unofficial Kodi Addons from the TVADDONS.CO Add-on Repository. Please visit www.tvaddons.co for support!
+
+Kodi is a registered trademark of the XBMC Foundation. We are not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation.</description>
+         <disclaimer>TVADDONS.CO did not make all the add-ons in this repository and is not responsible for their content.</disclaimer>
+		<platform>all</platform>
+                <forum>https://www.tvaddons.co/forums</forum>
+                <website>https://www.tvaddons.co</website>
+	</extension>
+</addon>
+
+<addon id="script.module.playscrapers" name="PlayScrapers Module" version="3.0.0" provider-name="PressPlay">
     <requires>
         <!--<import addon="xbmc.python" version="2.20.0" />-->
         <import addon="script.module.beautifulsoup4" />
@@ -751,15 +837,16 @@ Supports: OpenSubtitles, BSPlayer, Podnadpisi.NET, Subscene, Addic7ed
     </extension>
 </addon>
 
-<addon id="script.module.urlresolver" name="URLResolver" version="5.1.22" provider-name="tvaddons">
+<addon id="script.module.urlresolver" name="URLResolver" version="6.0.01" provider-name="tvaddons">
     <requires>
         <!-- <import addon="xbmc.python" version="3.0.0" /> -->
         <import addon="script.module.six" />
         <import addon="script.module.kodi-six" />
         <import addon="plugin.video.youtube" optional="true" />
         <import addon="script.module.python.twitch" optional="true" />
-        <import addon="script.module.cryptopy" version="1.2.6" optional="true" />
         <import addon="plugin.googledrive" optional="true" />
+        <import addon="repository.xbmchub" />
+        <import addon="plugin.program.indigo" />
     </requires>
     <extension point="xbmc.python.module" library="lib" />
     <extension point="xbmc.python.pluginsource" library="lib/default.py" />

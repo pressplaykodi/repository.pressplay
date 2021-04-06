@@ -1,6 +1,5 @@
-[B]Version 1.1.9[/B]
-fixed: speedporn & netflixporno video play
-added: herexxx
-added: asstoo
-fixed: daftsex
-fixed: showing quality/duration in favorites
+[B]Version 1.1.11[/B]
+fixed: CPV playback
+favorites: added Move favorite to Bottom in context menu
+fixed: Spankbang
+Spankbang: added Models category + length & quality filters

@@ -1,0 +1,11 @@
+[B][COLOR gold]v11.0.0[/COLOR][/B]
+- Small fixes
+
+[B][COLOR gold]v10.0.2[/COLOR][/B]
+- Slight name change
+
+[B][COLOR gold]v10.0.1[/COLOR][/B]
+- Dependency correction
+
+[B][COLOR gold]v10.0.0[/COLOR][/B]
+- Rebased code
