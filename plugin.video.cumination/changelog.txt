@@ -1,5 +1,10 @@
-[B]Version 1.1.11[/B]
-fixed: CPV playback
-favorites: added Move favorite to Bottom in context menu
-fixed: Spankbang
-Spankbang: added Models category + length & quality filters
+[B]Version 1.1.13[/B]
+MyFreeCams - Add Pagination & Tags
+xhamster - fixed
+xhamster - category selection moved to context menu
+xozilla - fixed
+hanime - fixed images
+Backup files - option to compress or not
+xhamster - added quality and length filter to context menu
+xhamster - added channels, pornstars, celebrities
+Animeidhentai - fixed

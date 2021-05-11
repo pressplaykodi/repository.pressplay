@@ -1,4 +1,11 @@
 
+[B]4.5.4 (2021.05.07)[/B]
+- New Exodus fork integration.
+- Kodi 19 fixes for the filter settings.
+
+[B]4.5.3 (2021.04.07)[/B]
+- Fixed Elementum multi scraping.
+
 [B]4.5.2 (2021.04.02)[/B]
 - Updated all integrations for Kodi 19.
 - Fixed Elementum integration.

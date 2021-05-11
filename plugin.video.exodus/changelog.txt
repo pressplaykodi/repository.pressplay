@@ -1,3 +1,6 @@
+[B][COLOR gold]v12.0.0[/COLOR][/B]
+- Dependency fix
+
 [B][COLOR gold]v11.0.0[/COLOR][/B]
 - Small fixes
 
