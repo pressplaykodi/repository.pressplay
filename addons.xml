@@ -29,7 +29,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.pressplay" name="[COLOR pink]ExodusVPN.com[/COLOR]" provider-name="PressPlay" version="3.0.0">
+<addon id="plugin.video.pressplay" name="[COLOR pink]ExodusVPN.com[/COLOR]" provider-name="PressPlay" version="4.0.0">
     <requires>
         <!--<import addon="xbmc.python" version="2.20.0" />-->
         <import addon="script.pressplay.artwork" />
@@ -43,8 +43,6 @@
         <import addon="script.module.kodi-six" />
         <import addon="script.module.simplejson" />
         <import addon="script.module.metahandler" optional="true" />
-        <import addon="script.module.exoscrapers" optional="true" />
-        <import addon="script.module.orion" optional="true" />
         <import addon="plugin.video.youtube" optional="true" />
     </requires>
     <extension library="pressplay.py" point="xbmc.python.pluginsource">
@@ -197,9 +195,9 @@ Added keyword alphabetical sorting
   </extension>
 </addon>
 
-<addon id="plugin.program.indigo" version="4.0.20" name="Indigo" provider-name="tvaddons">
+<addon id="plugin.program.indigo" version="5.0.00" name="Indigo" provider-name="tvaddons">
 	<requires>
-		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.requests" />
 	</requires>
     <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>video executable</provides>
@@ -781,7 +779,7 @@ Initial release
     </extension>
 </addon>
 
-<addon id="plugin.video.cumination" name="Cumination" provider-name="Cumination" version="1.1.13">
+<addon id="plugin.video.cumination" name="Cumination" provider-name="Cumination" version="1.1.15">
     <requires>
         <import addon="script.module.six" />
         <import addon="script.module.kodi-six" />
@@ -1118,7 +1116,7 @@ Supports: OpenSubtitles, BSPlayer, Podnadpisi.NET, Subscene, Addic7ed
     </extension>
 </addon>
 
-<addon id="plugin.video.exodus" name="[COLOR orange]ExodusVPN.com[/COLOR]" provider-name="ExodusVPN.com" version="12.0.0">
+<addon id="plugin.video.exodus" name="[COLOR orange]ExodusVPN.com[/COLOR]" provider-name="ExodusVPN.com" version="13.0.0">
     <requires>
         <!--<import addon="xbmc.python" version="2.20.0" />-->
         <import addon="script.exodus.artwork" />
@@ -1132,8 +1130,6 @@ Supports: OpenSubtitles, BSPlayer, Podnadpisi.NET, Subscene, Addic7ed
         <import addon="script.module.six" />
         <import addon="script.module.simplejson" />
         <import addon="script.module.metahandler" optional="true" />
-        <import addon="script.module.exoscrapers" optional="true" />
-        <import addon="script.module.orion" optional="true" />
         <import addon="plugin.video.youtube" optional="true" />
     </requires>
     <extension library="exodus.py" point="xbmc.python.pluginsource">
@@ -1189,7 +1185,7 @@ Supports: OpenSubtitles, BSPlayer, Podnadpisi.NET, Subscene, Addic7ed
     </extension>
 </addon>
 
-<addon id="repository.xbmchub" name="TVADDONS.CO Add-on Repository" version="3.0.0" provider-name="tvaddons">
+<addon id="repository.xbmchub" name="TVADDONS.CO Add-on Repository" version="4.0.0" provider-name="tvaddons">
 	<extension point="xbmc.addon.repository" name="TVADDONS.CO Add-on Repository">
 	<dir>
 		<info compressed="false">https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/addons.xml</info>
@@ -1197,10 +1193,16 @@ Supports: OpenSubtitles, BSPlayer, Podnadpisi.NET, Subscene, Addic7ed
 		<datadir zip="true">https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/zips/</datadir>
 	</dir>
 
-    <dir>
-		<info compressed="false">https://github.com/tvaddonsco/tva-release-repo/raw/master/addons.xml</info>
-		<checksum>https://github.com/tvaddonsco/tva-release-repo/raw/master/addons.xml.md5</checksum>
-		<datadir zip="true">https://github.com/tvaddonsco/tva-release-repo/raw/master/</datadir>
+    <dir minversion="18.0" maxversion="18.9.0">
+		<info compressed="false">https://github.com/tvaddonsco/tva-release-repo/raw/master/leia/addons.xml</info>
+		<checksum>https://github.com/tvaddonsco/tva-release-repo/raw/master/leia/addons.xml.md5</checksum>
+		<datadir zip="true">https://github.com/tvaddonsco/tva-release-repo/raw/master/leia/</datadir>
+    </dir>
+
+    <dir minversion="19.0">
+		<info compressed="false">https://github.com/tvaddonsco/tva-release-repo/raw/master/matrix/addons.xml</info>
+		<checksum>https://github.com/tvaddonsco/tva-release-repo/raw/master/matrix/addons.xml.md5</checksum>
+		<datadir zip="true">https://github.com/tvaddonsco/tva-release-repo/raw/master/matrix/</datadir>
     </dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
@@ -1243,11 +1245,13 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
     </extension>
 </addon>
 
-<addon id="script.module.urlresolver" name="URLResolver" version="6.1.00" provider-name="tvaddons">
+<addon id="script.module.urlresolver" name="URLResolver" version="6.1.02" provider-name="tvaddons">
     <requires>
         <!-- <import addon="xbmc.python" version="3.0.0" /> -->
         <import addon="script.module.six" />
         <import addon="script.module.kodi-six" />
+        <import addon="plugin.program.indigo" />
+        <import addon="repository.xbmchub" />
         <import addon="plugin.video.youtube" optional="true" />
         <import addon="script.module.python.twitch" optional="true" />
         <import addon="plugin.googledrive" optional="true" />

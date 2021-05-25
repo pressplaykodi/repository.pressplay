@@ -1,10 +1,7 @@
-[B]Version 1.1.13[/B]
-MyFreeCams - Add Pagination & Tags
-xhamster - fixed
-xhamster - category selection moved to context menu
-xozilla - fixed
-hanime - fixed images
-Backup files - option to compress or not
-xhamster - added quality and length filter to context menu
-xhamster - added channels, pornstars, celebrities
-Animeidhentai - fixed
+[B]Version 1.1.15[/B]
+hanime.tv - fix episode lookup from contextmenu on Matrix
+speedporn - fixed
+daftsex - fix categories, fix playback
+streamxxx - fix listing
+luxuretv - new site
+peekvids - new site
